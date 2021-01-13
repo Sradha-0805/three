@@ -1,0 +1,19 @@
+                                                      Wave Sorting Explanation
+                                                      
+    Here a wave like sorting is to be done. Initially the array containing the elements to wiggle sort is examined if it is empty the function will be returned.
+
+for (int i = 1; i < nums.length; i++) {
+        if (i % 2 == 1) {
+            if (nums[i - 1] > nums[i]) {
+                swap(nums, i - 1, i);
+            }
+        } else {
+            if (nums[i - 1] < nums[i]) {
+                swap(nums, i - 1, i);
+            }
+        } 
+This is the logic of the code which swap the numbers in such a way that arr[0]<arr[1]>arr[2]<arr[3].
+Later as per the input values the correspounding wave form array wil be displayed.
+
+Because the counting sort orders in O (n) with a high cost in memory and the other operations are O(n) .
+                                                  
